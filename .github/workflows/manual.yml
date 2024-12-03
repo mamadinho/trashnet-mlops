@@ -9,7 +9,7 @@ on:
       - master
 
 jobs:
-  build-and-test:
+  automate-training:
     runs-on: ubuntu-latest
     environment: trashnet
     steps:
