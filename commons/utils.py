@@ -64,7 +64,7 @@ def show_validation_score(train_acc_list, train_loss_list, valid_acc_list, valid
     os.makedirs(save_dir, exist_ok=True)
     plt.savefig(save_dir+save_name)
 
-def show_misclassified_samples(conf_mat, class_names, save_name="test_confusion_matrix.png"):
+def show_misclassified_samples(conf_mat, class_names, save_dir=IMG_SAVE_DIR, save_name="test_confusion_matrix.png"):
     plt.figure(figsize=(10, 8))
     sns.heatmap(conf_mat, annot=True, fmt='d', cmap='Blues', xticklabels=class_names, yticklabels=class_names)
     plt.xlabel('Predicted Labels')
