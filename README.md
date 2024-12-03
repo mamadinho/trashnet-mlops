@@ -1,5 +1,7 @@
 # TrashNet-MLOps
 
+NOTE: ignore the commit history, I am trying to automate model training using GitHub Actions and do experiment and model logging using WanDB 🗿
+
 A journey of learning MLOps, as my past professional experience does not utilize MLOps well.
 A publicly available [Trash Classification Dataset](https://huggingface.co/datasets/garythung/trashnet) is used as its training dataset.
 
