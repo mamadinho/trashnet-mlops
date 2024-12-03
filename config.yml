@@ -17,7 +17,7 @@ cross_validation:
   img_save_dir: "saved/"
 
 full_training:
-  epochs_full: 50
+  epochs_full: 5 #for testing github actions, it will be reduced.
 
 logging:
   use_wandb: True
