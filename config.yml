@@ -1,0 +1,25 @@
+---
+mode: "cross_validation" #cross_validation, full_training
+seed: 42
+num_classes: 6
+num_workers: 2
+batch_size: 32
+lr: 0.00001
+architecture: "hf_hub:timm/convnextv2_atto.fcmae"
+#optimizer: "Adam"
+#scheduler: "ReduceLROnPlateau"
+
+labels_name: ["Cardboard", "Glass", "Metal", "Paper", "Plastic", "Trash"]
+
+cross_validation:
+  fold_num: 3
+  epochs_crossval: 5
+  img_save_dir: "saved/"
+
+full_training:
+  epochs_full: 50
+
+logging:
+  use_wandb: True
+  wandb_project: "trash-classification"
+  wandb_dataset: "trashnet"
