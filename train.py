@@ -103,7 +103,7 @@ val_loader = create_dataloader_full_train(
 )
 
 if USE_WANDB:
-    wandb.login(key=[os.environ['WANDB_API_KEY']])
+    wandb.login(key=os.environ['WANDB_API_KEY'])
     wandb.init(
         project=WANDB_PROJECT,
         config={
