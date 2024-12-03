@@ -26,6 +26,11 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
+    - name: Download datasets
+      run: |
+        gdown 1lkyCj4gDhu0FjxWLRsiGksrevG3FH_tm
+        gdown 15hueW_R3Fb06YxYXCaJ0t0t19MlNjYia
+
     - name: Train Model
       run: |
         python train.py
