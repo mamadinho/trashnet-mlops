@@ -32,5 +32,7 @@ jobs:
         gdown 15hueW_R3Fb06YxYXCaJ0t0t19MlNjYia
 
     - name: Train Model
+      env:
+          WANDB_API_KEY: ${{ secrets.WANDB_API_KEY }}
       run: |
         python train.py
