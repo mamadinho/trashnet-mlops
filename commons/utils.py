@@ -70,4 +70,5 @@ def show_misclassified_samples(conf_mat, class_names, save_name="test_confusion_
     plt.xlabel('Predicted Labels')
     plt.ylabel('True Labels')
     plt.title('Confusion Matrix')
+    os.makedirs(save_dir, exist_ok=True)
     plt.savefig(IMG_SAVE_DIR+save_name)
