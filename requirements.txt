@@ -29,7 +29,6 @@ click==8.1.7
 cloudpickle==3.1.0
 colour==0.1.5
 comm==0.2.2
-command-not-found==0.3
 contourpy==1.2.1
 cryptography==3.4.8
 cycler==0.12.1
